@@ -36,7 +36,6 @@ window.addEventListener("header", function () {
 
 //Load Nav and Header
 function loadNavuHeader() {
-    alert("hiii");
     fetch('nav.html')
         .then(response => response.text())
         .then(data => {
