@@ -36,7 +36,7 @@ window.addEventListener("header", function () {
 
 //Load Nav and Header
 function loadNavuHeader() {
-    fetch('nav.html')
+    fetch('/nav.html')
         .then(response => response.text())
         .then(data => {
             document.querySelector('nav').innerHTML = data; // oder wähle einen anderen Container
@@ -45,7 +45,7 @@ function loadNavuHeader() {
         })
         .catch(error => console.error('Fehler beim Laden der Navigation:', error));
 
-        fetch('header.html')
+        fetch('/header.html')
         .then(response => response.text())
         .then(data => {
             document.querySelector('header').innerHTML = data; // oder wähle einen anderen Container
